@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro a CSS</title>
+    <!-- aqui van mis estilos externos-->
+    <link rel="stylesheet" href="./assets/style/style.css">
+</head>
+
+<body>
+    <h1>Intro a CSS</h1> <!-- Título -->
+
+    <h2>Este párrafo tiene estilos in line</h2>
+    <p style="background-color: brown; color: beige; font-size: large; 
+    font-family: 'Times New Roman', Times, serif;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dolores autem iste
+        debitis neque pariatur aut, a,
+        dolore perferendis sapiente omnis velit animi facilis atque totam consectetur! Est, voluptate ea.</p>
+
+    <style>
+        body {
+            background-color: aquamarine;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: xx-large;
+        }
+    </style>
+
+    <h2>Este párrafo tiene estilos usando la etiqueta style</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil magnam distinctio laborum numquam modi corporis
+        commodi itaque! Culpa eius dolor, soluta laudantium dolores ipsam officia maxime nobis cupiditate aspernatur
+        harum.</p>
+
+    <h2>Este párrafo tiene estilos en un documento externo</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat qui facere illum, debitis doloribus ad
+        aspernatur, molestias, cum illo voluptatum vel obcaecati nisi tempore est repellat in adipisci necessitatibus
+        inventore.</p>
+
+
+    <!-- Lista de participantes de participantes e instructores gneration (Clases y ids) -->
+    <h1 class="CH31" id="Aaron">Aaron</h1>
+    <h1 class="CH31" id="Brandon">Brandon</h1>
+    <h1 class="CH31" id="Antonio" style="color: purple;">Antonio</h1>
+    <h1 class="CH31" id="Edna">Edna</h1>
+    <h1 class="CH30" id="Tania">Tania</h1>
+</body>
+
+</html>
+
+
+<!-- 
+
+    existen 3 formas de agregar estilos a un documento de html
+
+    -inline (en line)
+
+    para trabajar con los estilos inline necesitamos trabajar con la palabra clave "style", todo esto se trabaja sobre la etiqueta que queremos modificar. Utilizar estilos en linea implica trabajar con una jerarquía alta, es decir que estos estilos se aplicarán primero sin importar los demás estilos
+    La desventaja de utilizar estos estilos, es el timepo de carga y el mantenimiento
+
+    -uso de etiquetas <style>
+
+    Cuando usamos los estilos dentro de la etuiqte style separamos los estilos de la etiqueta ára mantener una "limpieza" más marcada. Esto nos ayuda a que el código se vea más limpio
+
+    -referencia a un documeno de estilos externo (mejor práctica)
+
+    Utilizar estilos en un documento externo significa que tendremos 2 documento: por un lado nuestro index html con toda la estructura (etiquetas), y por otro lado tendremos un documento llamado style.css
+
+    cosas a considerar al trabajar en un documento de estilos externos:
+
+    -llamar  a nuestro documento style.css
+    -bases sólodad en el tema de los selectores
+    -la conexion entre el documento html y la hoja de estilos CSS, se tiene que realizar dentro del head o cabecera
+
+    para conectar nuestra hoja de estilos externa necesitamos utilizar la etiqueta llamada <link>
+
+    Qué estilos puedo moficar con CSS?
+    -ancho y alto de los elementos
+    -posición
+    -margen y rellenito
+    -borde
+    -colores de fuente, fondo
+    -fuente (google fonts o font awesome)
+
+    ventajas de usar documento externo
+    -escalabilidad
+    -seguridad en nuestro proyecto
+    -codigo más limpio
+    -codigo más entendible
+    -velocidad de lectura de nuestro documento
+
+primero se ejecutan estilos in line
+segundo etiqueta style
+tercero externo
+ -->
